@@ -1,12 +1,4 @@
----
-title: "Final Project: Implementation"
-linkTitle: "Implementation"
-type: docs
-categories: ["Project"]
-description: |
-    Final Project Implementation
-publishDate: 2026-09-03
----
+# Claims
 
 **NOTE: this file will likely diverge from [the official version](https://w3.cs.jmu.edu/cs347/f26/project/implementation/). i will try not to change any claims' identifiers (i.e. B10 should remain B10, and its semantics should also remain fixed)
 
@@ -92,6 +84,9 @@ Claims marked with an asterisk (*) indicate that the claim should be evaluated a
   *Assessment: CSS file linked and consistent styling visible across 3+ pages*
 - ***B120: Forms are styled and user-friendly** - Form inputs have labels, styling, and clear layout  
   *Assessment: Forms have proper labels, styling, and submit buttons*
+- ***B121: Application meets automated a11y checks** - Passes [WAVE](https://wave.webaim.org/)
+  *Assessment: Forms have proper labels, styling, and submit buttons*
+  
 
 ### CRUD Operations
 
@@ -147,6 +142,8 @@ Claims marked with an asterisk (*) indicate that the claim should be evaluated a
 
 ### Polish & Usability
 
+- **I89: Application passes manual a11y testing** - Tested via [Accessibility Insights for Web](https://microsoftedge.microsoft.com/addons/detail/accessibility-insights-fo/ghbhpcookfemncgoinjblecnilppimih)
+  *Assessment: repo includes a document detailing the manual testing completed, efforts/commits/changes required to resolve issues, and results of final testing*
 - ***I90: Application is mobile-responsive** - Works well on mobile devices and tablets  
   *Assessment: App layout adapts to mobile screen sizes (test at 375px width)*
 - **I100: Application has in-app documentation** - Help pages, tooltips, or user guides within the app  
@@ -192,10 +189,12 @@ Claims marked with an asterisk (*) indicate that the claim should be evaluated a
 - **S70: Application canvas Canvas API** - makes meaningful use of (Instructure's) Canvas API
   *Assessment: External API data displayed and functional in app*
 - **S80: Notifications (via Push)** - uses [push notifications](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) meaningfully
-  *Assessment: Push permissions are requested and meaningful push notifcation is sent/received successfully*
+  *Assessment: Push permissions are requested and meaningful push notification is sent/received successfully*
 
 ### Innovation & Polish
 
+- **S89: Application implements a11y in CI** - Automated a11y testing is implemented as a part of a Continuous Integration pipeline.
+  *Assessment: repo includes a document the CI and links to example runs/results*
 - **S90: Application has unique or innovative features** - Creative functionality not included here  
   *Assessment: Feature approved by instructor and successfully implemented*
  	- *Note: Propose your own unique feature for approval BEFORE you start working on it*
